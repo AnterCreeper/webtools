@@ -8,8 +8,8 @@ If any questions, welcome for Issues & PRs
 
 ### License
 
-This project is licensed under the LGPL-2.1-or-later license. **DO NOT** download or clone this project until you have read and agree the LICENSE.     
-该项目采用 `LGPL-2.1 以及之后版本` 授权。当你下载或克隆项目时，默认已经阅读并同意该协定。
+This project is licensed under the GPL-3.0-or-later. **DO NOT** download or clone this project until you have read and agree the LICENSE.  
+该项目采用 `GPL-3.0 以及之后版本` 授权。当你下载或克隆项目时，默认已经阅读并同意该协定。
 
 ### Overview
 
