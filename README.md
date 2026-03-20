@@ -16,7 +16,14 @@ This project is licensed under the GPL-3.0-or-later. **DO NOT** download or clon
 This Project contains scripts for building Docker Image, which consists of [GUILessBingSearch](https://github.com/wszqkzqk/GUILessBingSearch) and [qt-web-extractor](https://github.com/wszqkzqk/qt-web-extractor). For more information, please refer to [Blog](https://wszqkzqk.github.io/2026/02/26/OpenWebUI-Agentic-Search-Configuration).  
 该项目包含了构建 Docker 镜像的脚本，其包含了 [GUILessBingSearch](https://github.com/wszqkzqk/GUILessBingSearch) 和 [qt-web-extractor](https://github.com/wszqkzqk/qt-web-extractor)。更多信息请参见 [博客](https://wszqkzqk.github.io/2026/02/26/OpenWebUI-Agentic-Search-Configuration)。
 
+Besides, it includes `privoxy` for redirect proxy with rules, which would be very useful for China(Mainland) users.  
+此外，它包含了 `privoxy` 用于代理分流，这对中国(大陆)的用户会很有帮助。
+
 ### Usage
+
+You need to modify the `rules.action` before deployment.  
+在部署之前请先修改 `rules.action`。
+
 ```
 git clone https://github.com/antercreeper/webtools
 cd webtools

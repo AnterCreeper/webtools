@@ -1,0 +1,26 @@
+{{alias}}
+whitelist = +forward-override{forward-socks5 172.17.0.1:7890 .}
+
+{whitelist}
+.google.com
+.google.com.hk
+.docker.com
+.github.io
+.github.com
+.githubusercontent.com
+.perplexity.ai
+chatgpt.com
+openrouter.ai
+.openrouter.ai
+huggingface.co
+.youtube.com
+youtu.be
+.v2ex.com
+.stackoverflow.com
+.stackexchange.com
+.vercel.app
+*.archive.org
+archive.org
+arxiv.org
+*.googleusercontent.com
+linux.do

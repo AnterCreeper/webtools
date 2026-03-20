@@ -16,5 +16,10 @@ install -Dm755 guiless_bing_search.py /usr/local/bin/guiless-bing-search
 install -Dm644 guiless-bing-search.conf.example /etc/webtools/guiless-bing-search.conf
 sed -i 's|HOST=127.0.0.1|HOST=0.0.0.0|g' /etc/webtools/guiless-bing-search.conf
 
+cd ..
+apt install -y -qq privoxy
+ln -s /app/rules.action /etc/privoxy
+echo "actionsfile rules.action" | tee -a /etc/privoxy/config
+
 apt clean
 apt autoclean
