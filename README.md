@@ -27,5 +27,6 @@ You need to modify the `rules.action` before deployment.
 ```
 git clone https://github.com/antercreeper/webtools
 cd webtools
+git submodule update --init
 docker build -t webtools .
 ```
