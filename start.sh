@@ -1,11 +1,14 @@
 #!/bin/bash
 export QTWEBENGINE_CHROMIUM_FLAGS="--no-sandbox"
+setenv() {
+while read -r i ; do eval "export ${i}" ; done <<<$(grep -vxE '[[:blank:]]*([#;].*)?' $1)
+}
 {
-source /etc/webtools/qt-web-extractor.conf
+setenv /etc/webtools/qt-web-extractor.conf
 /usr/local/bin/qt-web-extractor serve
 } &
 {
-source /etc/webtools/guiless-bing-search.conf
+setenv /etc/webtools/guiless-bing-search.conf
 /usr/local/bin/guiless-bing-search
 } &
 wait
