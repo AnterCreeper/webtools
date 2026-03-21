@@ -23,3 +23,4 @@ echo "actionsfile rules.action" | tee -a /etc/privoxy/config
 
 apt clean
 apt autoclean
+rm -rf /var/lib/apt/lists/*
