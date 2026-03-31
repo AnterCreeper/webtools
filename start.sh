@@ -5,7 +5,7 @@ while read -r i ; do eval "export ${i}" ; done <<<$(grep -vxE '[[:blank:]]*([#;]
 }
 privoxy /etc/privoxy/config
 {
-export ALL_PROXY=http://127.0.0.1:7890
+export ALL_PROXY=http://127.0.0.1:8118
 setenv /etc/webtools/qt-web-extractor.conf
 /usr/local/bin/qt-web-extractor serve
 } &
