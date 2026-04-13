@@ -1,5 +1,5 @@
 {{alias}}
-whitelist = +forward-override{forward-socks5 172.17.0.1:7890 .}
+whitelist = +forward-override{forward 172.17.0.1:7890}
 
 {whitelist}
 .google.com
