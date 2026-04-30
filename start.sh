@@ -10,7 +10,7 @@ setenv /etc/webtools/qt-web-extractor.conf
 /usr/local/bin/qt-web-extractor serve
 } &
 {
-setenv /etc/webtools/guiless-bing-search.conf
-/usr/local/bin/guiless-bing-search
+setenv /etc/webtools/guiless-search.conf
+/usr/local/bin/guiless-search
 } &
 wait

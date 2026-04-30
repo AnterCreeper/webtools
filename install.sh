@@ -11,10 +11,11 @@ python3 -m installer dist/*.whl
 install -Dm644 qt-web-extractor.conf.example /etc/webtools/qt-web-extractor.conf
 sed -i 's|HOST=127.0.0.1|HOST=0.0.0.0|g' /etc/webtools/qt-web-extractor.conf
 
-cd ../GUILessBingSearch
-install -Dm755 guiless_bing_search.py /usr/local/bin/guiless-bing-search
-install -Dm644 guiless-bing-search.conf.example /etc/webtools/guiless-bing-search.conf
-sed -i 's|HOST=127.0.0.1|HOST=0.0.0.0|g' /etc/webtools/guiless-bing-search.conf
+cd ../guiless-search
+python3 -m build --wheel --no-isolation
+python3 -m installer dist/*.whl
+install -Dm644 guiless-search.conf.example /etc/webtools/guiless-search.conf
+sed -i 's|HOST=127.0.0.1|HOST=0.0.0.0|g' /etc/webtools/guiless-search.conf
 
 cd ..
 apt install -y -qq privoxy
