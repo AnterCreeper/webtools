@@ -4,6 +4,7 @@ whitelist = +forward-override{forward 172.17.0.1:7890}
 {whitelist}
 .google.com
 .google.com.hk
+.duckduckgo.com
 .docker.com
 .github.io
 .github.com
